@@ -14,6 +14,30 @@
 		379215A51D2114190092A800 /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215A31D2114190092A800 /* CDMainViewController.m */; };
 		379215A61D2114190092A800 /* CDMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379215A41D2114190092A800 /* CDMainViewController.xib */; };
 		379215A91D2114710092A800 /* CDCustomDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215A81D2114710092A800 /* CDCustomDayViewController.m */; };
+		379215CE1D211BBD0092A800 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215AE1D211BBD0092A800 /* JTCalendarManager.m */; };
+		379215CF1D211BBD0092A800 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215B01D211BBD0092A800 /* JTCalendarSettings.m */; };
+		379215D01D211BBD0092A800 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215B21D211BBD0092A800 /* JTDateHelper.m */; };
+		379215D11D211BBD0092A800 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215B51D211BBD0092A800 /* JTCalendarDelegateManager.m */; };
+		379215D21D211BBD0092A800 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215B71D211BBD0092A800 /* JTCalendarScrollManager.m */; };
+		379215D31D211BBD0092A800 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215C11D211BBD0092A800 /* JTCalendarDayView.m */; };
+		379215D41D211BBD0092A800 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215C31D211BBD0092A800 /* JTCalendarMenuView.m */; };
+		379215D51D211BBD0092A800 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215C51D211BBD0092A800 /* JTCalendarPageView.m */; };
+		379215D61D211BBD0092A800 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215C71D211BBD0092A800 /* JTCalendarWeekDayView.m */; };
+		379215D71D211BBD0092A800 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215C91D211BBD0092A800 /* JTCalendarWeekView.m */; };
+		379215D81D211BBD0092A800 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215CB1D211BBD0092A800 /* JTHorizontalCalendarView.m */; };
+		379215D91D211BBD0092A800 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215CD1D211BBD0092A800 /* JTVerticalCalendarView.m */; };
+		379215FE1D211FC60092A800 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 379215E41D211FC60092A800 /* Info.plist */; };
+		379215FF1D211FC60092A800 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215E61D211FC60092A800 /* MASCompositeConstraint.m */; };
+		379216001D211FC60092A800 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215E91D211FC60092A800 /* MASConstraint.m */; };
+		379216011D211FC60092A800 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215EB1D211FC60092A800 /* MASConstraintMaker.m */; };
+		379216021D211FC60092A800 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215ED1D211FC60092A800 /* MASLayoutConstraint.m */; };
+		379216031D211FC60092A800 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215F11D211FC60092A800 /* MASViewAttribute.m */; };
+		379216041D211FC60092A800 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215F31D211FC60092A800 /* MASViewConstraint.m */; };
+		379216051D211FC60092A800 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215F51D211FC60092A800 /* NSArray+MASAdditions.m */; };
+		379216061D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215F81D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		379216071D211FC60092A800 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FA1D211FC60092A800 /* View+MASAdditions.m */; };
+		379216081D211FC60092A800 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */; };
+		3792160B1D212DB20092A800 /* CDCalendarDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3792160A1D212DB20092A800 /* CDCalendarDay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +53,66 @@
 		379215A41D2114190092A800 /* CDMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDMainViewController.xib; sourceTree = "<group>"; };
 		379215A71D2114710092A800 /* CDCustomDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCustomDayViewController.h; sourceTree = "<group>"; };
 		379215A81D2114710092A800 /* CDCustomDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCustomDayViewController.m; sourceTree = "<group>"; };
+		379215AB1D211BBD0092A800 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
+		379215AC1D211BBD0092A800 /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
+		379215AD1D211BBD0092A800 /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
+		379215AE1D211BBD0092A800 /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
+		379215AF1D211BBD0092A800 /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
+		379215B01D211BBD0092A800 /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
+		379215B11D211BBD0092A800 /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
+		379215B21D211BBD0092A800 /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
+		379215B41D211BBD0092A800 /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
+		379215B51D211BBD0092A800 /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
+		379215B61D211BBD0092A800 /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
+		379215B71D211BBD0092A800 /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
+		379215B91D211BBD0092A800 /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
+		379215BA1D211BBD0092A800 /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
+		379215BB1D211BBD0092A800 /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
+		379215BC1D211BBD0092A800 /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
+		379215BD1D211BBD0092A800 /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
+		379215BE1D211BBD0092A800 /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
+		379215C01D211BBD0092A800 /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
+		379215C11D211BBD0092A800 /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
+		379215C21D211BBD0092A800 /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
+		379215C31D211BBD0092A800 /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
+		379215C41D211BBD0092A800 /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
+		379215C51D211BBD0092A800 /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
+		379215C61D211BBD0092A800 /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
+		379215C71D211BBD0092A800 /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
+		379215C81D211BBD0092A800 /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
+		379215C91D211BBD0092A800 /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
+		379215CA1D211BBD0092A800 /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
+		379215CB1D211BBD0092A800 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
+		379215CC1D211BBD0092A800 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
+		379215CD1D211BBD0092A800 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		379215E41D211FC60092A800 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379215E51D211FC60092A800 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		379215E61D211FC60092A800 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		379215E71D211FC60092A800 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		379215E81D211FC60092A800 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		379215E91D211FC60092A800 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		379215EA1D211FC60092A800 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		379215EB1D211FC60092A800 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		379215EC1D211FC60092A800 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		379215ED1D211FC60092A800 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		379215EE1D211FC60092A800 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		379215EF1D211FC60092A800 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		379215F01D211FC60092A800 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		379215F11D211FC60092A800 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		379215F21D211FC60092A800 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		379215F31D211FC60092A800 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		379215F41D211FC60092A800 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		379215F51D211FC60092A800 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		379215F61D211FC60092A800 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		379215F71D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		379215F81D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		379215F91D211FC60092A800 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		379215FA1D211FC60092A800 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		379215FB1D211FC60092A800 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		379215FC1D211FC60092A800 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		379216091D212DB20092A800 /* CDCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCalendarDay.h; sourceTree = "<group>"; };
+		3792160A1D212DB20092A800 /* CDCalendarDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCalendarDay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +197,8 @@
 		3792159B1D20FF370092A800 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				379216091D212DB20092A800 /* CDCalendarDay.h */,
+				3792160A1D212DB20092A800 /* CDCalendarDay.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -120,8 +206,106 @@
 		3792159C1D20FF370092A800 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				379215E31D211FC60092A800 /* Masonry */,
+				379215AA1D211BBD0092A800 /* JTCalendar */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		379215AA1D211BBD0092A800 /* JTCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				379215AB1D211BBD0092A800 /* JTCalendar.h */,
+				379215AC1D211BBD0092A800 /* JTCalendarDelegate.h */,
+				379215AD1D211BBD0092A800 /* JTCalendarManager.h */,
+				379215AE1D211BBD0092A800 /* JTCalendarManager.m */,
+				379215AF1D211BBD0092A800 /* JTCalendarSettings.h */,
+				379215B01D211BBD0092A800 /* JTCalendarSettings.m */,
+				379215B11D211BBD0092A800 /* JTDateHelper.h */,
+				379215B21D211BBD0092A800 /* JTDateHelper.m */,
+				379215B31D211BBD0092A800 /* Managers */,
+				379215B81D211BBD0092A800 /* Protocols */,
+				379215BF1D211BBD0092A800 /* Views */,
+			);
+			path = JTCalendar;
+			sourceTree = "<group>";
+		};
+		379215B31D211BBD0092A800 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				379215B41D211BBD0092A800 /* JTCalendarDelegateManager.h */,
+				379215B51D211BBD0092A800 /* JTCalendarDelegateManager.m */,
+				379215B61D211BBD0092A800 /* JTCalendarScrollManager.h */,
+				379215B71D211BBD0092A800 /* JTCalendarScrollManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		379215B81D211BBD0092A800 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				379215B91D211BBD0092A800 /* JTCalendarDay.h */,
+				379215BA1D211BBD0092A800 /* JTCalendarPage.h */,
+				379215BB1D211BBD0092A800 /* JTCalendarWeek.h */,
+				379215BC1D211BBD0092A800 /* JTCalendarWeekDay.h */,
+				379215BD1D211BBD0092A800 /* JTContent.h */,
+				379215BE1D211BBD0092A800 /* JTMenu.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		379215BF1D211BBD0092A800 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				379215C01D211BBD0092A800 /* JTCalendarDayView.h */,
+				379215C11D211BBD0092A800 /* JTCalendarDayView.m */,
+				379215C21D211BBD0092A800 /* JTCalendarMenuView.h */,
+				379215C31D211BBD0092A800 /* JTCalendarMenuView.m */,
+				379215C41D211BBD0092A800 /* JTCalendarPageView.h */,
+				379215C51D211BBD0092A800 /* JTCalendarPageView.m */,
+				379215C61D211BBD0092A800 /* JTCalendarWeekDayView.h */,
+				379215C71D211BBD0092A800 /* JTCalendarWeekDayView.m */,
+				379215C81D211BBD0092A800 /* JTCalendarWeekView.h */,
+				379215C91D211BBD0092A800 /* JTCalendarWeekView.m */,
+				379215CA1D211BBD0092A800 /* JTHorizontalCalendarView.h */,
+				379215CB1D211BBD0092A800 /* JTHorizontalCalendarView.m */,
+				379215CC1D211BBD0092A800 /* JTVerticalCalendarView.h */,
+				379215CD1D211BBD0092A800 /* JTVerticalCalendarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		379215E31D211FC60092A800 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				379215E41D211FC60092A800 /* Info.plist */,
+				379215E51D211FC60092A800 /* MASCompositeConstraint.h */,
+				379215E61D211FC60092A800 /* MASCompositeConstraint.m */,
+				379215E71D211FC60092A800 /* MASConstraint+Private.h */,
+				379215E81D211FC60092A800 /* MASConstraint.h */,
+				379215E91D211FC60092A800 /* MASConstraint.m */,
+				379215EA1D211FC60092A800 /* MASConstraintMaker.h */,
+				379215EB1D211FC60092A800 /* MASConstraintMaker.m */,
+				379215EC1D211FC60092A800 /* MASLayoutConstraint.h */,
+				379215ED1D211FC60092A800 /* MASLayoutConstraint.m */,
+				379215EE1D211FC60092A800 /* Masonry.h */,
+				379215EF1D211FC60092A800 /* MASUtilities.h */,
+				379215F01D211FC60092A800 /* MASViewAttribute.h */,
+				379215F11D211FC60092A800 /* MASViewAttribute.m */,
+				379215F21D211FC60092A800 /* MASViewConstraint.h */,
+				379215F31D211FC60092A800 /* MASViewConstraint.m */,
+				379215F41D211FC60092A800 /* NSArray+MASAdditions.h */,
+				379215F51D211FC60092A800 /* NSArray+MASAdditions.m */,
+				379215F61D211FC60092A800 /* NSArray+MASShorthandAdditions.h */,
+				379215F71D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				379215F81D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				379215F91D211FC60092A800 /* View+MASAdditions.h */,
+				379215FA1D211FC60092A800 /* View+MASAdditions.m */,
+				379215FB1D211FC60092A800 /* View+MASShorthandAdditions.h */,
+				379215FC1D211FC60092A800 /* ViewController+MASAdditions.h */,
+				379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379215FE1D211FC60092A800 /* Info.plist in Resources */,
 				379215911D20FE420092A800 /* LaunchScreen.storyboard in Resources */,
 				3792158E1D20FE420092A800 /* Assets.xcassets in Resources */,
 				379215A61D2114190092A800 /* CDMainViewController.xib in Resources */,
@@ -194,10 +379,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3792160B1D212DB20092A800 /* CDCalendarDay.m in Sources */,
+				379215D91D211BBD0092A800 /* JTVerticalCalendarView.m in Sources */,
+				379216041D211FC60092A800 /* MASViewConstraint.m in Sources */,
 				379215861D20FE420092A800 /* AppDelegate.m in Sources */,
+				379216001D211FC60092A800 /* MASConstraint.m in Sources */,
+				379215D01D211BBD0092A800 /* JTDateHelper.m in Sources */,
 				379215A91D2114710092A800 /* CDCustomDayViewController.m in Sources */,
+				379215D21D211BBD0092A800 /* JTCalendarScrollManager.m in Sources */,
+				379215CE1D211BBD0092A800 /* JTCalendarManager.m in Sources */,
+				379216081D211FC60092A800 /* ViewController+MASAdditions.m in Sources */,
+				379216071D211FC60092A800 /* View+MASAdditions.m in Sources */,
+				379215D81D211BBD0092A800 /* JTHorizontalCalendarView.m in Sources */,
+				379216031D211FC60092A800 /* MASViewAttribute.m in Sources */,
+				379215D31D211BBD0092A800 /* JTCalendarDayView.m in Sources */,
+				379215D71D211BBD0092A800 /* JTCalendarWeekView.m in Sources */,
+				379215D61D211BBD0092A800 /* JTCalendarWeekDayView.m in Sources */,
+				379215FF1D211FC60092A800 /* MASCompositeConstraint.m in Sources */,
+				379216021D211FC60092A800 /* MASLayoutConstraint.m in Sources */,
+				379215D11D211BBD0092A800 /* JTCalendarDelegateManager.m in Sources */,
 				379215A51D2114190092A800 /* CDMainViewController.m in Sources */,
+				379216011D211FC60092A800 /* MASConstraintMaker.m in Sources */,
+				379216051D211FC60092A800 /* NSArray+MASAdditions.m in Sources */,
+				379215CF1D211BBD0092A800 /* JTCalendarSettings.m in Sources */,
 				379215831D20FE420092A800 /* main.m in Sources */,
+				379215D41D211BBD0092A800 /* JTCalendarMenuView.m in Sources */,
+				379215D51D211BBD0092A800 /* JTCalendarPageView.m in Sources */,
+				379216061D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CDCollectionViewCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindy.source.CDCollectionViewCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CDCollectionViewCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindy.source.CDCollectionViewCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
