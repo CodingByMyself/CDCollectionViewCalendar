@@ -84,7 +84,7 @@
     // Min date will be 2 month before today
     _minDate = [_calendarManager.dateHelper addToDate:_todayDate months:0];
     // Max date will be 2 month after today
-    _maxDate = [_calendarManager.dateHelper addToDate:_todayDate months:1];
+    _maxDate = [_calendarManager.dateHelper addToDate:_todayDate months:1.5];
 }
 
 #pragma mark - CalendarManager delegate
@@ -157,7 +157,9 @@
 // Used to limit the date for the calendar, optional
 - (BOOL)calendar:(JTCalendarManager *)calendar canDisplayPageWithDate:(NSDate *)date
 {
-    return [_calendarManager.dateHelper date:date isEqualOrAfter:_minDate andEqualOrBefore:_maxDate];
+    BOOL result = [_calendarManager.dateHelper date:date isEqualOrAfter:_minDate andEqualOrBefore:_maxDate];
+    NSLog(@"result = %zi",result);
+    return result;
 }
 
 #pragma mark  Views Customization
