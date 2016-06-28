@@ -45,9 +45,7 @@
     _calendarManager.delegate = self;
     [self createMinAndMaxDate];
     _calendarManager.settings.weekDayFormat = JTCalendarWeekDayFormatSingle;
-    //    [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]
-    //    [NSLocale currentLocale]
-    _calendarManager.dateHelper.calendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh-Hans"];
+    _calendarManager.dateHelper.calendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh-Hans"];  // @"en_US" /  [NSLocale currentLocale]
     
     // 星期菜单
     _calendarMenuView =  [[JTCalendarMenuView alloc] init];
@@ -65,7 +63,7 @@
     //  日期内容
     _calendarContentView = [[JTVerticalCalendarView alloc] init];
     [self.view addSubview:_calendarContentView];
-    //    _calendarContentView.backgroundColor = [UIColor yellowColor];
+//    _calendarContentView.backgroundColor = [UIColor yellowColor];
     [_calendarContentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_calendarMenuView.mas_bottom);
         make.left.equalTo(self.view);
@@ -82,12 +80,41 @@
 {
     _todayDate = [NSDate date];
     // Min date will be 2 month before today
-    _minDate = [_calendarManager.dateHelper addToDate:_todayDate months:0];
-    // Max date will be 2 month after today
-    _maxDate = [_calendarManager.dateHelper addToDate:_todayDate months:1.5];
+//    _minDate = [_calendarManager.dateHelper addToDate:_todayDate months:0];
+    _minDate = nil;  // 表示没有最小的时间
+//     Max date will be 2 month after today
+//    _maxDate = [_calendarManager.dateHelper addToDate:_todayDate months:1];
+    _maxDate = nil;  //  表示没有最大的时间
 }
 
 #pragma mark - CalendarManager delegate
+#pragma mark   Menu View
+- (UIView *)calendarBuildMenuItemView:(JTCalendarManager *)calendar
+{
+    UILabel *label = [UILabel new];
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor blackColor];
+    label.font = [UIFont fontWithName:@"Helvetica-blod" size:16];
+    
+    return label;
+}
+
+- (void)calendar:(JTCalendarManager *)calendar prepareMenuItemView:(UILabel *)menuItemView date:(NSDate *)date
+{
+    static NSDateFormatter *dateFormatter;
+    if(!dateFormatter){
+        dateFormatter = [NSDateFormatter new];
+        dateFormatter.dateFormat = @"MMMM  yyyy";
+        
+        dateFormatter.locale = _calendarManager.dateHelper.calendar.locale;
+        dateFormatter.timeZone = _calendarManager.dateHelper.calendar.timeZone;
+    }
+
+    menuItemView.text = [dateFormatter stringFromDate:date];
+}
+
+#pragma mark  Content View  Data
 // Used to customize the appearance of dayView
 - (void)calendar:(JTCalendarManager *)calendar prepareDayView:(JTCalendarDayView *)dayView
 {
@@ -158,17 +185,16 @@
 - (BOOL)calendar:(JTCalendarManager *)calendar canDisplayPageWithDate:(NSDate *)date
 {
     BOOL result = [_calendarManager.dateHelper date:date isEqualOrAfter:_minDate andEqualOrBefore:_maxDate];
-    NSLog(@"result = %zi",result);
     return result;
 }
 
-#pragma mark  Views Customization
+#pragma mark   Content Views Customization
 - (UIView<JTCalendarWeekDay> *)calendarBuildWeekDayView:(JTCalendarManager *)calendar
 {
     JTCalendarWeekDayView *view = [JTCalendarWeekDayView new];
     
     for(UILabel *label in view.dayViews){
-        label.textColor = [UIColor lightGrayColor];
+        label.textColor = [UIColor grayColor];
         label.font = [UIFont fontWithName:@"Helvetica-blod" size:10];
     }
     
@@ -188,7 +214,7 @@
     
 }
 
-#pragma mark - touch mode method
+#pragma mark - Content View Touch Mode Method
 - (void)singleSelectionModeOnCalendar:(JTCalendarManager *)calendar didTouchDayView:(JTCalendarDayView *)dayView
 {
     _dateSelected = dayView.date;

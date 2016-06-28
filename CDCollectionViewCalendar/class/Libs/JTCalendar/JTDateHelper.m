@@ -170,11 +170,33 @@
 
 - (BOOL)date:(NSDate *)date isEqualOrAfter:(NSDate *)startDate andEqualOrBefore:(NSDate *)endDate
 {
-    if([self date:date isEqualOrAfter:startDate] && [self date:date isEqualOrBefore:endDate]){
-        return YES;
+//    if([self date:date isEqualOrAfter:startDate] && [self date:date isEqualOrBefore:endDate]){
+//        return YES;
+//    }
+//    
+//    return NO;
+    
+#pragma mark  (di.chen ) Modify
+    BOOL  isAfter;
+    if (startDate == nil) {
+        isAfter = YES;
+    } else {
+        isAfter = [self date:date isEqualOrAfter:startDate];
     }
     
-    return NO;
+    BOOL  isEnd;
+    if (endDate == nil) {
+        isEnd = YES;
+    } else {
+        isEnd = [self date:date isEqualOrBefore:endDate];
+    }
+    
+    //  最终结果
+    if(isAfter && isEnd){
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end
