@@ -38,6 +38,10 @@
 		379216071D211FC60092A800 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FA1D211FC60092A800 /* View+MASAdditions.m */; };
 		379216081D211FC60092A800 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */; };
 		37D551021D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */; };
+		37D551051D2263E000058B82 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551041D2263E000058B82 /* CoreFoundation.framework */; };
+		37D551071D2263E700058B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551061D2263E700058B82 /* UIKit.framework */; };
+		37D551091D2263F500058B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551081D2263F500058B82 /* Foundation.framework */; };
+		37D5510B1D22641100058B82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D5510A1D22641100058B82 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +117,10 @@
 		379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTCalendarDayView+CDCustomDayView.h"; sourceTree = "<group>"; };
 		37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JTCalendarDayView+CDCustomDayView.m"; sourceTree = "<group>"; };
+		37D551041D2263E000058B82 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		37D551061D2263E700058B82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37D551081D2263F500058B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37D5510A1D22641100058B82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D5510B1D22641100058B82 /* QuartzCore.framework in Frameworks */,
+				37D551091D2263F500058B82 /* Foundation.framework in Frameworks */,
+				37D551071D2263E700058B82 /* UIKit.framework in Frameworks */,
+				37D551051D2263E000058B82 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +141,7 @@
 		379215751D20FE420092A800 = {
 			isa = PBXGroup;
 			children = (
+				37D551031D2263D400058B82 /* Frameworks */,
 				379215801D20FE420092A800 /* CDCollectionViewCalendar */,
 				3792157F1D20FE420092A800 /* Products */,
 			);
@@ -306,6 +319,17 @@
 				379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		37D551031D2263D400058B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37D5510A1D22641100058B82 /* QuartzCore.framework */,
+				37D551081D2263F500058B82 /* Foundation.framework */,
+				37D551061D2263E700058B82 /* UIKit.framework */,
+				37D551041D2263E000058B82 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CDCollectionViewCalendar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindy.source.CDCollectionViewCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CDCollectionViewCalendar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cindy.source.CDCollectionViewCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
