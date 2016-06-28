@@ -37,7 +37,7 @@
 		379216061D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215F81D211FC60092A800 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		379216071D211FC60092A800 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FA1D211FC60092A800 /* View+MASAdditions.m */; };
 		379216081D211FC60092A800 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */; };
-		3792160B1D212DB20092A800 /* CDCalendarDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3792160A1D212DB20092A800 /* CDCalendarDay.m */; };
+		37D551021D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,8 +111,8 @@
 		379215FB1D211FC60092A800 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		379215FC1D211FC60092A800 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		379215FD1D211FC60092A800 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		379216091D212DB20092A800 /* CDCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCalendarDay.h; sourceTree = "<group>"; };
-		3792160A1D212DB20092A800 /* CDCalendarDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCalendarDay.m; sourceTree = "<group>"; };
+		37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTCalendarDayView+CDCustomDayView.h"; sourceTree = "<group>"; };
+		37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JTCalendarDayView+CDCustomDayView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +197,8 @@
 		3792159B1D20FF370092A800 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				379216091D212DB20092A800 /* CDCalendarDay.h */,
-				3792160A1D212DB20092A800 /* CDCalendarDay.m */,
+				37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */,
+				37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3792160B1D212DB20092A800 /* CDCalendarDay.m in Sources */,
+				37D551021D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m in Sources */,
 				379215D91D211BBD0092A800 /* JTVerticalCalendarView.m in Sources */,
 				379216041D211FC60092A800 /* MASViewConstraint.m in Sources */,
 				379215861D20FE420092A800 /* AppDelegate.m in Sources */,
