@@ -35,7 +35,7 @@
         make.left.equalTo(showView);
         make.right.equalTo(showView);
         make.height.equalTo(@(16.0));
-        make.centerY.equalTo(@(-6.0));
+        make.centerY.equalTo(@(-7.0));
     }];
     
     //  副标题
@@ -75,6 +75,25 @@
     UIView *showView = [self viewWithTag:100];
     UILabel *labelDescription = [showView viewWithTag:102];
     labelDescription.font = font;
+}
+
+- (void)updateDayViewConstraintWithDescription:(NSString *)descr
+{
+    UIView *showView = [self viewWithTag:100];
+    UILabel *labelDescription = [showView viewWithTag:102];
+    
+    if (descr == nil || [descr isEqualToString:@""]) {
+        [self.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(@(0));
+        }];
+        labelDescription.hidden = YES;
+    } else {
+        [self.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(@(-7.0));
+        }];
+        [self setDescriptionText:descr];
+        labelDescription.hidden = NO;
+    }
 }
 
 @end

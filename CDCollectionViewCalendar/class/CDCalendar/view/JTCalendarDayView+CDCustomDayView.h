@@ -16,6 +16,7 @@
 - (void)setDescriptionText:(NSString *)description;
 - (void)setDescriptionTextColor:(UIColor *)color;
 - (void)setDescriptionFont:(UIFont *)font;
+- (void)updateDayViewConstraintWithDescription:(NSString *)descr;
 
 @end
 

@@ -176,7 +176,7 @@
 //    
 //    return NO;
     
-#pragma mark  (di.chen ) Modify
+#pragma mark   Modify  (di.chen)
     BOOL  isAfter;
     if (startDate == nil) {
         isAfter = YES;
@@ -197,6 +197,18 @@
     } else {
         return NO;
     }
+}
+
+#pragma mark  show  (di.chen)
+- (NSString *)stringWithDate:(NSDate *)date byFormat:(NSString *)format
+{
+    static NSDateFormatter *dateFormatter = nil;
+    if(!dateFormatter){
+        dateFormatter = [self createDateFormatter];
+        //  eg : format = @"MMMM yyyy" ;  format = @"dd"  ;
+        [dateFormatter setDateFormat:format];
+    }
+     return [dateFormatter stringFromDate:date];
 }
 
 @end

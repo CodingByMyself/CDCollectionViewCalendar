@@ -31,4 +31,6 @@
 - (BOOL)date:(NSDate *)dateA isEqualOrAfter:(NSDate *)dateB;
 - (BOOL)date:(NSDate *)date isEqualOrAfter:(NSDate *)startDate andEqualOrBefore:(NSDate *)endDate;
 
+#pragma mark  show  (di.chen)
+- (NSString *)stringWithDate:(NSDate *)date byFormat:(NSString *)format;
 @end

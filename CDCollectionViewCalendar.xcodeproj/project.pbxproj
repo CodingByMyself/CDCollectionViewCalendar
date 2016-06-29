@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37719AE61D22866D007E789A /* CDMangocityCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 37719AE51D22866D007E789A /* CDMangocityCalendar.m */; };
 		379215831D20FE420092A800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215821D20FE420092A800 /* main.m */; };
 		379215861D20FE420092A800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215851D20FE420092A800 /* AppDelegate.m */; };
 		3792158E1D20FE420092A800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3792158D1D20FE420092A800 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37719AE41D22866D007E789A /* CDMangocityCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMangocityCalendar.h; sourceTree = "<group>"; };
+		37719AE51D22866D007E789A /* CDMangocityCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMangocityCalendar.m; sourceTree = "<group>"; };
 		3792157E1D20FE420092A800 /* CDCollectionViewCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCollectionViewCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379215821D20FE420092A800 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		379215841D20FE420092A800 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 		3792159B1D20FF370092A800 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				37719AE41D22866D007E789A /* CDMangocityCalendar.h */,
+				37719AE51D22866D007E789A /* CDMangocityCalendar.m */,
 				37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */,
 				37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */,
 			);
@@ -408,6 +413,7 @@
 				37D551301D226F4200058B82 /* JTCalendarManager.m in Sources */,
 				37D551321D226F4200058B82 /* JTDateHelper.m in Sources */,
 				37D551381D226F4200058B82 /* JTCalendarWeekDayView.m in Sources */,
+				37719AE61D22866D007E789A /* CDMangocityCalendar.m in Sources */,
 				37D551361D226F4200058B82 /* JTCalendarMenuView.m in Sources */,
 				37D551341D226F4200058B82 /* JTCalendarScrollManager.m in Sources */,
 				37D551391D226F4200058B82 /* JTCalendarWeekView.m in Sources */,
