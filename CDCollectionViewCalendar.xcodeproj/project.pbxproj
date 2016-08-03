@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37719AE61D22866D007E789A /* CDMangocityCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 37719AE51D22866D007E789A /* CDMangocityCalendar.m */; };
 		379215831D20FE420092A800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215821D20FE420092A800 /* main.m */; };
 		379215861D20FE420092A800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215851D20FE420092A800 /* AppDelegate.m */; };
 		3792158E1D20FE420092A800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3792158D1D20FE420092A800 /* Assets.xcassets */; };
 		379215911D20FE420092A800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3792158F1D20FE420092A800 /* LaunchScreen.storyboard */; };
 		379215A51D2114190092A800 /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379215A31D2114190092A800 /* CDMainViewController.m */; };
-		379215A61D2114190092A800 /* CDMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379215A41D2114190092A800 /* CDMainViewController.xib */; };
-		37D551021D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */; };
+		379752EB1D51FEC20027AE0F /* CDMangocityCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 379752E81D51FEC20027AE0F /* CDMangocityCalendar.m */; };
+		379752EC1D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 379752EA1D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.m */; };
 		37D551051D2263E000058B82 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551041D2263E000058B82 /* CoreFoundation.framework */; };
 		37D551071D2263E700058B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551061D2263E700058B82 /* UIKit.framework */; };
 		37D551091D2263F500058B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D551081D2263F500058B82 /* Foundation.framework */; };
@@ -35,8 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37719AE41D22866D007E789A /* CDMangocityCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMangocityCalendar.h; sourceTree = "<group>"; };
-		37719AE51D22866D007E789A /* CDMangocityCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMangocityCalendar.m; sourceTree = "<group>"; };
 		3792157E1D20FE420092A800 /* CDCollectionViewCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCollectionViewCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379215821D20FE420092A800 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		379215841D20FE420092A800 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,9 +43,10 @@
 		379215921D20FE420092A800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379215A21D2114190092A800 /* CDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMainViewController.h; sourceTree = "<group>"; };
 		379215A31D2114190092A800 /* CDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMainViewController.m; sourceTree = "<group>"; };
-		379215A41D2114190092A800 /* CDMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDMainViewController.xib; sourceTree = "<group>"; };
-		37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTCalendarDayView+CDCustomDayView.h"; sourceTree = "<group>"; };
-		37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JTCalendarDayView+CDCustomDayView.m"; sourceTree = "<group>"; };
+		379752E71D51FEC20027AE0F /* CDMangocityCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMangocityCalendar.h; sourceTree = "<group>"; };
+		379752E81D51FEC20027AE0F /* CDMangocityCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMangocityCalendar.m; sourceTree = "<group>"; };
+		379752E91D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTCalendarDayView+CDCustomDayView.h"; sourceTree = "<group>"; };
+		379752EA1D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JTCalendarDayView+CDCustomDayView.m"; sourceTree = "<group>"; };
 		37D551041D2263E000058B82 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		37D551061D2263E700058B82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37D551081D2263F500058B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,7 +149,6 @@
 			children = (
 				379215A21D2114190092A800 /* CDMainViewController.h */,
 				379215A31D2114190092A800 /* CDMainViewController.m */,
-				379215A41D2114190092A800 /* CDMainViewController.xib */,
 				379215991D20FF370092A800 /* CDCalendar */,
 				3792159C1D20FF370092A800 /* Libs */,
 			);
@@ -161,28 +158,12 @@
 		379215991D20FF370092A800 /* CDCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				3792159A1D20FF370092A800 /* controller */,
-				3792159B1D20FF370092A800 /* view */,
+				379752E71D51FEC20027AE0F /* CDMangocityCalendar.h */,
+				379752E81D51FEC20027AE0F /* CDMangocityCalendar.m */,
+				379752E91D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.h */,
+				379752EA1D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.m */,
 			);
 			path = CDCalendar;
-			sourceTree = "<group>";
-		};
-		3792159A1D20FF370092A800 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		3792159B1D20FF370092A800 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				37719AE41D22866D007E789A /* CDMangocityCalendar.h */,
-				37719AE51D22866D007E789A /* CDMangocityCalendar.m */,
-				37D551001D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.h */,
-				37D551011D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m */,
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		3792159C1D20FF370092A800 /* Libs */ = {
@@ -339,7 +320,6 @@
 			files = (
 				379215911D20FE420092A800 /* LaunchScreen.storyboard in Resources */,
 				3792158E1D20FE420092A800 /* Assets.xcassets in Resources */,
-				379215A61D2114190092A800 /* CDMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D551021D2216FF00058B82 /* JTCalendarDayView+CDCustomDayView.m in Sources */,
 				37D551351D226F4200058B82 /* JTCalendarDayView.m in Sources */,
+				379752EC1D51FEC20027AE0F /* JTCalendarDayView+CDCustomDayView.m in Sources */,
 				37D5513B1D226F4200058B82 /* JTVerticalCalendarView.m in Sources */,
 				37D5513A1D226F4200058B82 /* JTHorizontalCalendarView.m in Sources */,
 				37D551311D226F4200058B82 /* JTCalendarSettings.m in Sources */,
@@ -407,11 +387,11 @@
 				37D551301D226F4200058B82 /* JTCalendarManager.m in Sources */,
 				37D551321D226F4200058B82 /* JTDateHelper.m in Sources */,
 				37D551381D226F4200058B82 /* JTCalendarWeekDayView.m in Sources */,
-				37719AE61D22866D007E789A /* CDMangocityCalendar.m in Sources */,
 				37D551361D226F4200058B82 /* JTCalendarMenuView.m in Sources */,
 				37D551341D226F4200058B82 /* JTCalendarScrollManager.m in Sources */,
 				37D551391D226F4200058B82 /* JTCalendarWeekView.m in Sources */,
 				37D551331D226F4200058B82 /* JTCalendarDelegateManager.m in Sources */,
+				379752EB1D51FEC20027AE0F /* CDMangocityCalendar.m in Sources */,
 				37D551371D226F4200058B82 /* JTCalendarPageView.m in Sources */,
 				379215A51D2114190092A800 /* CDMainViewController.m in Sources */,
 				379215831D20FE420092A800 /* main.m in Sources */,

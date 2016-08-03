@@ -10,7 +10,4 @@
 
 @interface CDMainViewController : UIViewController
 
-
-@property (weak, nonatomic) IBOutlet UITableView *tableFunction;
-
 @end
