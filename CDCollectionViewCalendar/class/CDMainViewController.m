@@ -7,11 +7,13 @@
 //
 
 #import "CDMainViewController.h"
-#import "CDCustomDayViewController.h"
+#import "CDMangocityCalendar.h"
 
-@interface CDMainViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface CDMainViewController () <UITableViewDelegate,UITableViewDataSource,CDMangocityCalendarViewDelegate>
 {
     NSArray *_functionList;
+    
+    CDMangocityCalendar *_calendarView;
 }
 @end
 
@@ -26,6 +28,17 @@
     _functionList = @[@"自定义显示day的view"];
     _tableFunction.delegate = self;
     _tableFunction.dataSource = self;
+    
+    [self initCalendar];
+}
+
+- (void)initCalendar
+{
+    _calendarView = [[CDMangocityCalendar alloc] init];
+    _calendarView.delegate = self;
+    //  如果不设置minDate和maxDate则默认没有区间限制
+    _calendarView.minDate = [_calendarView.calendarManager.dateHelper addToDate:_calendarView.todayDate months:0];
+    _calendarView.maxDate = [_calendarView.calendarManager.dateHelper addToDate:_calendarView.todayDate months:3];
 }
 
 #pragma mark - UI Table View Data And Delegate
@@ -47,8 +60,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSLog(@"section = %zi , row = %zi",[indexPath section],[indexPath row]);
     if ([indexPath row] == 0) {
-        CDCustomDayViewController *day = [[CDCustomDayViewController alloc] init];
-        [self.navigationController pushViewController:day animated:YES];
+        [_calendarView showCalendarWithTargetView:self.view];
     }
 }
 
@@ -62,7 +74,20 @@
     return [_functionList count];
 }
 
+#pragma mark  -  CDMangocityCalendarView  Delegate
+- (NSString *)mangocityCalendar:(UIView *)calendar descriptionStringOnDay:(NSDate *)date
+{
+    if ([date timeIntervalSinceDate:[NSDate date]] < 0) {
+        return nil;  //  返回nil表示不需要显示描述文本
+    } else {
+        return @"¥1240"; //  返回需要显示的描述文本
+    }
+}
 
+- (void)mangocityCalendar:(UIView *)calendar didTouchDay:(NSDate *)dayDate
+{
+    NSLog(@"%@ 被点击啦",[_calendarView.calendarManager.dateHelper stringWithDate:dayDate byFormat:@"yyyy - MM - dd"]);
+}
 
 
 @end

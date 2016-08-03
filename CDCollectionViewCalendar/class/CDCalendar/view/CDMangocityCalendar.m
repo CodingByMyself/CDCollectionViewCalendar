@@ -10,6 +10,9 @@
 
 @interface CDMangocityCalendar() <JTCalendarDelegate>
 {
+    UIView *_calendarViewBg;
+    UIView *_targetView;
+    
     JTCalendarMenuView *_calendarMenuView;
     JTVerticalCalendarView *_calendarContentView;
     
@@ -18,6 +21,7 @@
 
 @end
 
+ const CGFloat CalendarViewHeight = 280.0;
 #define ScreenHeigth  [[UIScreen mainScreen] bounds].size.height
 #define ScreenWidth  [[UIScreen mainScreen] bounds].size.width
 
@@ -52,7 +56,7 @@
         make.top.equalTo(self);
         make.left.equalTo(self);
         make.right.equalTo(self);
-        make.height.equalTo(@(25.0));
+        make.height.equalTo(@(30.0));
     }];
     [_calendarManager setMenuView:_calendarMenuView];
     
@@ -64,13 +68,76 @@
         make.top.equalTo(_calendarMenuView.mas_bottom);
         make.left.equalTo(self);
         make.right.equalTo(self);
-        make.height.equalTo(self);
+        make.bottom.equalTo(self);
     }];
     [_calendarManager setContentView:_calendarContentView];
     
     //  设置今天的日期
     [_calendarManager setDate:_todayDate];
+    self.backgroundColor = [UIColor whiteColor];
+    self.layer.shadowColor = [UIColor colorWithRed:200.0/255.0 green:200.0/255.0 blue:200.0/255.0 alpha:1.0].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0.0,-1.5);
+    self.layer.shadowOpacity = 0.8f;
+    self.layer.shadowRadius = 1.5;
 }
+
+#pragma mark - public method
+- (void)showCalendarWithTargetView:(UIView *)targetView
+{
+    [_calendarViewBg removeFromSuperview];
+    if (_calendarViewBg == nil) {
+        _calendarViewBg = [[UIView alloc] initWithFrame:targetView.bounds];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenCalendar)];
+        tap.numberOfTapsRequired = 1;
+        [_calendarViewBg addGestureRecognizer:tap];
+       
+        [_calendarViewBg addSubview:self];
+        [self mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(_calendarViewBg).offset(CalendarViewHeight);
+            make.left.equalTo(_calendarViewBg);
+            make.right.equalTo(_calendarViewBg);
+            make.height.equalTo(@(CalendarViewHeight));
+        }];
+    }
+    _calendarViewBg.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.15];
+    [self.calendarManager reload];
+    [self.calendarManager setDate:self.minDate];
+    
+    //  添加到目标view中显示
+    _targetView = targetView;
+    [_targetView addSubview:_calendarViewBg];
+    _calendarViewBg.alpha = 0;
+    [_calendarViewBg mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_targetView);
+        make.left.equalTo(_targetView);
+        make.right.equalTo(_targetView);
+        make.bottom.equalTo(_targetView);
+    }];
+    [_targetView layoutIfNeeded];
+    
+    //  动画方式显示日历
+    [self mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_calendarViewBg).offset(0);
+    }];
+    [UIView animateWithDuration:0.3 animations:^{
+        _calendarViewBg.alpha = 1.0;
+        [_targetView layoutIfNeeded];
+    }];
+}
+
+- (void)hiddenCalendar
+{
+    _calendarViewBg.backgroundColor = [UIColor clearColor];
+    [self mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_calendarViewBg).offset(CalendarViewHeight);
+    }];
+    [UIView animateWithDuration:0.3 animations:^{
+        [_calendarViewBg layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [_calendarViewBg removeFromSuperview];
+    }];
+}
+
 
 #pragma mark - CalendarManager delegate
 #pragma mark   Menu View

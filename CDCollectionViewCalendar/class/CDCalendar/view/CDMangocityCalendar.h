@@ -25,6 +25,10 @@
 @property (nonatomic,readonly) NSMutableArray *datesSelected;   //  多选模式
 
 
+
+#pragma mark public method
+- (void)showCalendarWithTargetView:(UIView *)targetView;
+- (void)hiddenCalendar;
 @end
 
 
